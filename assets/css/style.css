@@ -36,6 +36,13 @@ a {
     color: #fffff1;
 }
 
+h2 {
+    font-family: "Druk Wide Cy Web", sans-serif;
+    text-transform: uppercase;
+}
+
+/* Header section */
+
 .header {
     padding: 27px 0;
     text-transform: uppercase;
@@ -89,6 +96,7 @@ main {
     padding-top: 86px;
 }
 
+/* Hero section */
 .hero {
     /* Use blend-mode multiply to set background image and color */
     background-blend-mode: multiply;
@@ -120,4 +128,18 @@ main {
     border: 1px solid #BF1515;
     padding: 1rem;
     border-radius: 8px;
+}
+
+/* About section */
+.about {
+    background-color: rgba(191, 21, 21, 0.30);
+    text-align: center;
+}
+
+.about__title {
+    padding: 35px 0 60px;
+}
+
+.about__image {
+    max-width: 100%;
 }
