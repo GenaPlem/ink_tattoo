@@ -85,3 +85,11 @@ a {
 main {
     padding-top: 86px;
 }
+
+.hero {
+    background: url("../images/tattooed-man-posing-rain.png") center top / cover;
+}
+
+.hero__title {
+    padding-top: 400px;
+}
