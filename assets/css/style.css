@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #202020;
     color: #fffff1;
@@ -34,7 +38,6 @@ a {
 
 .header {
     padding: 27px 0;
-    /*position: relative;*/
     text-transform: uppercase;
     background-color: #202020;
     border-bottom: 3px solid #BF1515;
@@ -87,9 +90,34 @@ main {
 }
 
 .hero {
-    background: url("../images/tattooed-man-posing-rain.png") center top / cover;
+    /* Use blend-mode multiply to set background image and color */
+    background-blend-mode: multiply;
+    background-image: url("../images/tattooed-man-posing-rain.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-color: rgba(32,32,32, 0.2);
+    min-height: 648px;
+    text-align: center;
 }
 
 .hero__title {
-    padding-top: 400px;
+    padding: 400px 2rem 8px;
+    color: #BF1515;
+    font-size: 39px;
+    letter-spacing: -0.78px;
+    text-align: start;
+}
+
+.hero__description {
+    font-size: 13px;
+    padding: 0 2rem 22px;
+    text-align: start;
+}
+
+.hero__consultation {
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid #BF1515;
+    padding: 1rem;
+    border-radius: 8px;
 }
