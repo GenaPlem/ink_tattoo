@@ -34,14 +34,19 @@ a {
 
 .header {
     padding: 27px 0;
-    position: relative;
+    /*position: relative;*/
     text-transform: uppercase;
+    background-color: #202020;
     border-bottom: 3px solid #BF1515;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 /* Add wrapper to set header element flexible */
 .header__wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .header__logo {
@@ -52,15 +57,31 @@ a {
 }
 
 .header__navigation {
-    position: absolute;
-    top: 100px;
+    font-size: 25px;
+}
+
+.header__navigation:hover .header__links {
+    display: inline-block;
+    background-color: rgba(32, 32, 32, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem 0;
+    border-bottom: 3px solid #BF1515;
 }
 /* Remove default dots in unordered list */
 .header__links {
     list-style-type: none;
+    display: none;
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
 }
 
 .header__link {
     padding-bottom: 25px;
-    font-size: 25px;
+}
+
+main {
+    padding-top: 86px;
 }
