@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Druk Wide Cy Web";
+    src: url('../fonts/Druk-Wide-Cy-Web-Medium-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202020;
+    color: #fffff1;
+    font-family: Inter, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1416px;
+    min-width: 355px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fffff1;
+}
+
+.header {
+    padding: 27px 0;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 3px solid #BF1515;
+}
+/* Add wrapper to set header element flexible */
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    font-family: "Druk Wide Cy Web",sans-serif;
+    text-decoration: none;
+    display: contents;
+    font-size: 20px;
+}
+
+.header__navigation {
+    position: absolute;
+    top: 100px;
+}
+/* Remove default dots in unordered list */
+.header__links {
+    list-style-type: none;
+}
+
+.header__link {
+    padding-bottom: 25px;
+    font-size: 25px;
+}
