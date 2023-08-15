@@ -41,6 +41,7 @@ h2 {
     font-family: "Druk Wide Cy Web", sans-serif;
     text-transform: uppercase;
     padding: 60px 0 35px;
+    text-align: center;
 }
 
 /* Header section */
@@ -102,7 +103,7 @@ main {
 .hero {
     /* Use blend-mode multiply to set background image and color */
     background-blend-mode: multiply;
-    background-image: url("../images/tattooed-man-posing-rain.png");
+    background-image: url("../images/hero_background.webp");
     background-position: center top;
     background-repeat: no-repeat;
     background-color: rgba(32,32,32, 0.2);
@@ -189,5 +190,5 @@ main {
 .gallery__images img:nth-child(3n),
 .gallery__images img:nth-child(4n),
 .gallery__images img:last-child {
-    width: calc(50% - 2.5px);
+    width: calc(50% - (5px / 2));
 }
