@@ -40,6 +40,7 @@ a {
 h2 {
     font-family: "Druk Wide Cy Web", sans-serif;
     text-transform: uppercase;
+    padding: 60px 0 35px;
 }
 
 /* Header section */
@@ -137,7 +138,7 @@ main {
 }
 
 .about__title {
-    padding: 60px 0 35px;
+
 }
 
 .about__image {
@@ -168,6 +169,13 @@ main {
     width: 100%;
 }
 
- .about__description span {
-     font-weight: 700;
- }
+.about__description span {
+ font-weight: 700;
+}
+
+/* Gallery section */
+.gallery__images {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
