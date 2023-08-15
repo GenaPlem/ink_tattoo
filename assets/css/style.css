@@ -168,6 +168,10 @@ main {
     border-radius: 8px;
 }
 
+.hero__consultation:hover {
+    border: 2px solid #BF1515;
+}
+
 /* About section */
 .about {
     background-color: rgba(191, 21, 21, 0.30);
@@ -294,6 +298,12 @@ main {
 .consultation input[type=submit] {
     background-color: #202020;
     color: #fffff1;
+    cursor: pointer;
+}
+
+.consultation input[type=submit]:hover {
+    background-color: #BF1515;
+    border: #202020;
 }
 
 #privacy_policy {
