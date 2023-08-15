@@ -45,6 +45,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+.hidden-title {
+    display: none;
+}
+
 /* Header section */
 
 .header {
@@ -240,10 +244,12 @@ main {
 }
 
 .consultation form {
+    max-width: 570px;
     display: flex;
     flex-direction: column;
     gap: calc(5px / 2);
     padding: 44px 0;
+    margin: 0 auto;
 }
 
 .consultation input,
