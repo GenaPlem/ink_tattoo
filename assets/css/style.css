@@ -324,6 +324,10 @@ main {
     font-size: 26px;
 }
 
+.contacts__links a:hover i {
+    color: #BF1515;
+}
+
 .contacts__info p {
     padding-bottom: 30px;
 }
