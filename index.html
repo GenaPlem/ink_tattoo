@@ -35,7 +35,7 @@
         <section class="hero" id="home">
             <h1 class="hero__title">Welcome to our<br> Tattoo Studio</h1>
             <p class="hero__description">Experience the art of tattooing<br> like never before.</p>
-            <a href="" class="hero__consultation">Booking A consultation</a>
+            <a href="#consultation" class="hero__consultation">Booking A consultation</a>
         </section>
         <section class="about" id="about">
             <div class="container">
@@ -75,43 +75,58 @@
         <section class="faq" id="faq">
             <div class="container">
                 <h2>Faq</h2>
-                <div class="faq__wrapper">
-                    <div>
-                        <input type="checkbox" name="question_1" id="question_1">
-                        <label for="question_1">How long does it take?</label>
-                        <p>The duration of a tattoo session depends on the size and complexity of the design. On average, a small
-                            tattoo can take about 1-2 hours, while a larger one may require  multiple sessions.
-                        </p>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="question_2" id="question_2">
-                        <label for="question_2">Does it hurt?</label>
-                        <p>The level of pain experienced during a tattoo session varies from person to person. Most people describe
-                            it as a tolerable discomfort, similar to a cat scratch or a sunburn.
-                        </p>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="question_3" id="question_3">
-                        <label for="question_3">How should I care for my tattoo?</label>
-                        <p>After getting a tattoo, it's important to follow proper aftercare instructions provided by your tattoo artist.
-                            This usually involves keeping the tattoo clean, avoiding direct sunlight, and applying a healing ointment.
-                        </p>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="question_4" id="question_4">
-                        <label for="question_4">How much does it cost?</label>
-                        <p>The cost of a tattoo depends on various factors such as size, design complexity, and the experience of
-                            the artist. It's best to consult with your tattoo artist for an accurate price estimate.
-                        </p>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="question_5" id="question_5">
-                        <label for="question_5">Can I bring my own design?</label>
-                        <p>Absolutely! Many tattoo artists are happy to work with your own design ideas. Just make sure to discuss
-                            it with them beforehand to ensure it can be translated into a suitable tattoo.
-                        </p>
-                    </div>
+                <div class="faq__question">
+                    <input type="checkbox" name="question_1" id="question_1">
+                    <label for="question_1">How long does it take?</label>
+                    <p>The duration of a tattoo session depends on the size and complexity of the design. On average, a small
+                        tattoo can take about 1-2 hours, while a larger one may require  multiple sessions.
+                    </p>
                 </div>
+                <div class="faq__question">
+                    <input type="checkbox" name="question_2" id="question_2">
+                    <label for="question_2">Does it hurt?</label>
+                    <p>The level of pain experienced during a tattoo session varies from person to person. Most people describe
+                        it as a tolerable discomfort, similar to a cat scratch or a sunburn.
+                    </p>
+                </div>
+                <div class="faq__question">
+                    <input type="checkbox" name="question_3" id="question_3">
+                    <label for="question_3">How should I care for my tattoo?</label>
+                    <p>After getting a tattoo, it's important to follow proper aftercare instructions provided by your tattoo artist.
+                        This usually involves keeping the tattoo clean, avoiding direct sunlight, and applying a healing ointment.
+                    </p>
+                </div>
+                <div class="faq__question">
+                    <input type="checkbox" name="question_4" id="question_4">
+                    <label for="question_4">How much does it cost?</label>
+                    <p>The cost of a tattoo depends on various factors such as size, design complexity, and the experience of
+                        the artist. It's best to consult with your tattoo artist for an accurate price estimate.
+                    </p>
+                </div>
+                <div class="faq__question">
+                    <input type="checkbox" name="question_5" id="question_5">
+                    <label for="question_5">Can I bring my own design?</label>
+                    <p>Absolutely! Many tattoo artists are happy to work with your own design ideas. Just make sure to discuss
+                        it with them beforehand to ensure it can be translated into a suitable tattoo.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="consultation" id="consultation">
+            <div class="container">
+                <h2>Consultation</h2>
+                <p>We'll contact you shorty</p>
+                <form action="https://formdump.codeinstitute.net" method="post">
+                    <label for="name"></label>
+                    <input type="text" name="name" id="name" placeholder="Your name" required>
+                    <label for="number"></label>
+                    <input type="number" name="number" id="number" placeholder="Phone number" required>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <label for="description"></label>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe what are you want us to make"></textarea>
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </section>
         <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto assumenda at consectetur consequuntur,
