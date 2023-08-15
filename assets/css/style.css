@@ -6,31 +6,31 @@
 }
 @font-face {
     font-family: Inter;
-    src: url("../fonts/Inter/static/Inter-Light.ttf");
+    src: url("../fonts/Inter/static/Inter-Light.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: Inter;
-    src: url("../fonts/Inter/static/Inter-Regular.ttf");
+    src: url("../fonts/Inter/static/Inter-Regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: Inter;
-    src: url("../fonts/Inter/static/Inter-Medium.ttf");
+    src: url("../fonts/Inter/static/Inter-Medium.ttf") format("truetype");
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: Inter;
-    src: url("../fonts/Inter/static/Inter-SemiBold.ttf");
+    src: url("../fonts/Inter/static/Inter-SemiBold.ttf") format("truetype");
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: Inter;
-    src: url("../fonts/Inter/static/Inter-Bold.ttf");
+    src: url("../fonts/Inter/static/Inter-Bold.ttf") format("truetype");
     font-weight: 700;
     font-style: normal;
 }
@@ -111,7 +111,7 @@ h2 {
 .header__navigation:hover .header__links {
     display: inline-block;
     background-color: rgba(32, 32, 32, 0.7);
-    -webkit-backdrop-filter: blur(10px);
+    /*-webkit-backdrop-filter: blur(10px);*/
     backdrop-filter: blur(10px);
     padding: 1rem 2rem 0;
     border-bottom: 3px solid #BF1515;
@@ -239,8 +239,8 @@ main {
     margin-bottom: 20px;
 }
 
-.faq__question label:before {
-
+.faq__question label {
+    font-weight: 600;
 }
 
 .faq__question p {
