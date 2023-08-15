@@ -176,6 +176,18 @@ main {
 /* Gallery section */
 .gallery__images {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 5px;
+}
+
+.gallery__images img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery__images img:nth-child(3n),
+.gallery__images img:nth-child(4n),
+.gallery__images img:last-child {
+    width: calc(50% - 2.5px);
 }
