@@ -75,6 +75,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+main {
+    padding-top: 86px;
+}
+
 .hidden-title {
     display: none;
 }
@@ -104,9 +108,9 @@ h2 {
     font-size: 20px;
 }
 
-.header__navigation {
-    font-size: 25px;
-}
+/*.header__navigation {*/
+/*    !*font-size: 25px;*!*/
+/*}*/
 
 .header__navigation:hover .header__links {
     display: inline-block;
@@ -130,9 +134,14 @@ h2 {
     padding-bottom: 25px;
 }
 
-main {
-    padding-top: 86px;
+.nav_btn {
+    border: none;
+    background-color: transparent;
+    color: #fffff1;
+    font-size: 25px;
 }
+
+
 
 /* Hero section */
 .hero {
