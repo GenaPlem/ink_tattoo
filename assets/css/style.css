@@ -133,6 +133,10 @@ main {
     background-color: transparent;
 }
 
+#close_icon {
+    display: none;
+}
+
 .nav_btn:checked ~ .header__links {
     display: block;
     background-color: rgba(32, 32, 32, 0.7);
@@ -140,10 +144,6 @@ main {
     backdrop-filter: blur(10px);
     padding: 1rem 2rem 0;
     border-bottom: 3px solid #BF1515;
-}
-
-#close_icon {
-    display: none;
 }
 
 .nav_btn:checked ~ label #close_icon {
@@ -310,6 +310,7 @@ main {
 
 .consultation input,
 .consultation textarea {
+    font-family: Inter, sans-serif;
     width: 100%;
     padding: 12px 35px;
     border-radius: 10px;
