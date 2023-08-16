@@ -44,7 +44,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 85px;
+    scroll-padding-top: 81px;
 }
 
 body {
@@ -76,7 +76,7 @@ h2 {
 }
 
 main {
-    padding-top: 86px;
+    padding-top: 81px;
 }
 
 .hidden-title {
@@ -109,24 +109,16 @@ main {
 }
 
 .header__navigation {
-    /*font-size: 25px;*/
+    font-size: 20px;
 }
 
-.header__navigation:hover .header__links {
-    display: block;
-    background-color: rgba(32, 32, 32, 0.7);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2rem 0;
-    border-bottom: 3px solid #BF1515;
-}
 /* Remove default dots in unordered list */
 .header__links {
     list-style-type: none;
     display: none;
     min-width: 100dvw;
     position: absolute;
-    top: 86px;
+    top: 81px;
     right: 0;
     z-index: 1;
 }
@@ -136,13 +128,31 @@ main {
 }
 
 .nav_btn {
+    display: none;
     border: none;
     background-color: transparent;
-    color: #fffff1;
-    font-size: 25px;
 }
 
+.nav_btn:checked ~ .header__links {
+    display: block;
+    background-color: rgba(32, 32, 32, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem 0;
+    border-bottom: 3px solid #BF1515;
+}
 
+#close_icon {
+    display: none;
+}
+
+.nav_btn:checked ~ label #close_icon {
+    display: block;
+}
+
+.nav_btn:checked ~ label #open_icon {
+    display: none;
+}
 
 /* Hero section */
 .hero {
