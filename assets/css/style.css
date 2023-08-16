@@ -283,6 +283,16 @@ main {
     border-bottom: 1px solid white;
     position: relative;
 }
+/* Make animation to open questions */
+.faq__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s;
+}
+
+.faq__content > div {
+    overflow: hidden;
+}
 
 .faq__question label {
     display: block;
@@ -296,8 +306,7 @@ main {
     padding: 0 0 20px;
 }
 
-.faq__question input,
-.faq__question p {
+.faq__question input {
     display: none;
 }
 
@@ -311,12 +320,31 @@ main {
     background: url("../images/down_arrow.svg") no-repeat center / cover;
 }
 
-.faq__question input[type=checkbox]:checked ~ p {
-    display: block;
+.faq__question input[type=checkbox]:checked ~ div {
+    animation: open_faq 0.5s linear;
 }
 
 .faq__question input[type=checkbox]:checked ~ label::before {
-    transform: rotate(180deg);
+    transform: scale(1, -1);
+    transition: transform 0.25s ease;
+}
+
+.faq__question input[type=checkbox]:checked ~ .faq__content {
+    grid-template-rows: 1fr;
+}
+
+.faq__question input[type=checkbox]:not(:checked) ~ label::before {
+    transition: transform 0.25s ease;
+}
+
+/* Animation for FAQ text opacity */
+@keyframes open_faq {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Consultation section */
