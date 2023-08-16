@@ -120,6 +120,11 @@ main {
     top: 81px;
     right: 0;
     z-index: 1;
+    text-align: center;
+}
+
+.header__links a {
+    display: block;
 }
 
 .header__link {
@@ -586,5 +591,9 @@ footer p {
 
     .hero__description {
         padding-bottom: 200px;
+    }
+    /* Contacts section */
+    .contacts__map {
+
     }
 }
