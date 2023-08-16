@@ -104,7 +104,6 @@ main {
 .header__logo {
     font-family: "Druk Wide Cy Web",sans-serif;
     text-decoration: none;
-    display: contents;
     font-size: 20px;
 }
 
@@ -535,5 +534,45 @@ footer p {
 
     footer p {
         font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        scroll-padding-top: unset;
+    }
+    main {
+        padding-top: unset;
+    }
+
+    /* Header section */
+    .header {
+        padding: 47px 0;
+        position: unset;
+    }
+
+    .header__navigation label {
+        display: none;
+    }
+
+    .header__links {
+        position: unset;
+        display: flex;
+        gap: 40px;
+        font-size: 18px;
+        min-width: unset;
+    }
+
+    .header__links li {
+        padding: 0;
+    }
+
+    /* Hero section */
+    .hero__title {
+        padding-top: 300px;
+    }
+
+    .hero__description {
+        padding-bottom: 200px;
     }
 }
