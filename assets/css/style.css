@@ -592,8 +592,38 @@ footer p {
     .hero__description {
         padding-bottom: 200px;
     }
+    /* About section */
+    .about__wrapper {
+        display: flex;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+    .about__image {
+        width: 40%;
+    }
+    .about__info {
+        width: 60%;
+        padding: 0;
+    }
     /* Contacts section */
-    .contacts__map {
+    .contacts {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10%;
+    }
 
+    .contacts__wrapper {
+        flex-direction: column;
+    }
+
+    .contacts__links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contacts__map {
+        position: unset;
+        /*width: 100%;*/
+        max-width: 60%;
     }
 }
