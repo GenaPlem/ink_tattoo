@@ -199,17 +199,9 @@ main {
     background-color: rgba(191, 21, 21, 0.30);
 }
 
-.about__title {
-
-}
-
 .about__image {
     max-width: 100%;
 }
-
-/*.about__wrapper {*/
-
-/*}*/
 
 .about__info {
     display: flex;
@@ -443,4 +435,103 @@ footer p {
     display: contents;
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
+}
+/* Tablet version */
+@media screen and (min-width: 768px) {
+    html {
+        scroll-padding-top: 106px;
+    }
+    main {
+        padding-top: 106px;
+    }
+    h2 {
+        font-size: 35px;
+        text-align: start;
+        padding: 88px 0 60px;
+    }
+    /* Header section */
+    .header__logo, .header__navigation {
+        font-size: 40px;
+    }
+
+    .header__links {
+        top: 106px;
+    }
+    /* Hero section */
+    .hero {
+        min-height: 886px;
+        background-image: url("../images/hero_background_desktop.webp");
+    }
+
+    .hero__title {
+        font-size: 55px;
+        padding-top: 552px;
+    }
+
+    .hero__description {
+        font-size: 18px;
+        padding-bottom: 56px;
+    }
+
+    .hero__consultation {
+        font-size: 21px;
+    }
+    /* About section */
+    .about__info {
+        font-size: 25px;
+    }
+    /* Gallery section */
+    .gallery__images {
+        padding-bottom: 30px;
+    }
+    /* Faq section */
+    .faq {
+        padding-bottom: 75px;
+    }
+    .faq, #privacy_policy {
+        font-size: 20px;
+    }
+    /* Consultation section */
+    .consultation p {
+        font-size: 1rem;
+    }
+
+    .consultation input,
+    .consultation textarea {
+        font-size: 25px;
+        padding: 18px 40px;
+    }
+
+    .consultation form {
+        padding: 80px 0;
+    }
+    /* Contacts section */
+    .contacts {
+        padding: 85px 0 50px;
+    }
+
+    .contacts__wrapper {
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
+    .contacts__info {
+        font-size: 20px;
+    }
+
+    .contacts__info p {
+        padding-bottom: 40px;
+    }
+
+    .contacts__links li {
+        font-size: 40px;
+    }
+    /* Footer */
+    footer {
+        padding: 23px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
 }
