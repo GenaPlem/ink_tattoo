@@ -169,6 +169,10 @@ main {
     text-align: center;
 }
 
+#hero__mobile {
+    padding: 0;
+}
+
 .hero__title {
     padding: 400px 2rem 8px;
     color: #BF1515;
@@ -234,9 +238,9 @@ main {
 .gallery__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 200px);
     gap: 5px;
-    grid-auto-rows: 200px;
+    /*grid-auto-rows: 200px;*/
 }
 
 .gallery__images img {
@@ -421,6 +425,13 @@ main {
     padding-bottom: 30px;
 }
 
+.contacts__map {
+    width: 100dvw;
+    position: relative;
+    left: -2rem;
+    right: -2rem;
+}
+
 .contacts iframe {
     width: 100%;
 }
@@ -483,6 +494,7 @@ footer p {
     }
     /* Gallery section */
     .gallery__images {
+        grid-template-rows: repeat(5, 334px);
         padding-bottom: 30px;
     }
     /* Faq section */
