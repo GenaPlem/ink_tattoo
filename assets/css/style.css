@@ -52,6 +52,7 @@ body {
     font-family: Inter, sans-serif;
     font-weight: normal;
     font-style: normal;
+    overflow-x: hidden;
 }
 
 .container {
@@ -75,7 +76,7 @@ h2 {
 }
 
 main {
-    padding-top: 81px;
+    padding: 81px 0 26px;
 }
 
 .hidden-title {
@@ -403,7 +404,7 @@ main {
 
 /* Contacts section */
 .contacts {
-    padding: 60px 0 26px;
+    padding: 60px 0 0;
 }
 
 .contacts__wrapper {
@@ -454,6 +455,17 @@ footer p {
     font-size: 12px;
     color: rgba(255, 255, 255, 0.5);
 }
+
+/* Privacy page */
+.privacy__title {
+    font-size: 35px;
+    margin: 20px;
+}
+
+.privacy h2 {
+    font-size: 20px;
+}
+
 /* Add media queries for smallest mobile width(320px-350px) */
 @media screen and (max-width: 350px) {
     .hero__title {
@@ -521,6 +533,7 @@ footer p {
     .faq, #privacy_policy {
         font-size: 20px;
     }
+
     /* Consultation section */
     .consultation p {
         font-size: 1rem;
@@ -537,7 +550,7 @@ footer p {
     }
     /* Contacts section */
     .contacts {
-        padding: 85px 0 50px;
+        padding: 85px 0 25px;
     }
 
     .contacts__wrapper {
@@ -563,6 +576,15 @@ footer p {
 
     footer p {
         font-size: 15px;
+    }
+
+    /* Privacy page */
+    .privacy__title {
+        font-size: 45px;
+    }
+
+    .privacy h2 {
+        font-size: 25px;
     }
 }
 /* Desktop version */
@@ -720,5 +742,15 @@ footer p {
     .contacts__map {
         position: unset;
         max-width: 60%;
+    }
+
+    /* Privacy page */
+    .privacy__title {
+        font-size: 55px;
+    }
+
+    .privacy h2 {
+        font-size: 35px;
+        margin-left: 0;
     }
 }
