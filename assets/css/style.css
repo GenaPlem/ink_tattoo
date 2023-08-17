@@ -83,7 +83,6 @@ main {
 }
 
 /* Header section */
-
 .header {
     padding: 27px 0;
     text-transform: uppercase;
@@ -137,7 +136,8 @@ main {
     background-color: transparent;
 }
 
-#open_icon, #close_icon {
+#open_icon,
+#close_icon {
     cursor: pointer;
 }
 
@@ -164,7 +164,7 @@ main {
 
 /* Hero section */
 .hero {
-    /* Use blend-mode multiply to set background image and color */
+    /* Use blend-mode multiply to set background image and background color */
     background-blend-mode: multiply;
     background-image: url("../images/hero_background.webp");
     background-position: center top;
@@ -240,7 +240,6 @@ main {
 }
 
 /* Gallery section */
-
 .gallery__images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -363,7 +362,7 @@ main {
 
 .consultation p {
     font-size: 0.5rem;
-    /* Add negative margin top to be closer to h2 and don't change all h2 on page */
+    /* Add negative margin top to be closer to h2 and doesn't change all h2 elements on page */
     margin-top: -30px;
 }
 
@@ -467,16 +466,19 @@ footer p {
     html {
         scroll-padding-top: 106px;
     }
+
     main {
         padding-top: 106px;
     }
+
     h2 {
         font-size: 35px;
         text-align: start;
         padding: 88px 0 60px;
     }
     /* Header section */
-    .header__logo, .header__navigation {
+    .header__logo,
+    .header__navigation {
         font-size: 40px;
     }
 
@@ -515,6 +517,7 @@ footer p {
     .faq {
         padding-bottom: 75px;
     }
+
     .faq, #privacy_policy {
         font-size: 20px;
     }
@@ -623,6 +626,7 @@ footer p {
     .hero {
         background-size: cover;
     }
+
     .hero__title {
         padding-top: 300px;
     }
