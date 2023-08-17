@@ -610,14 +610,13 @@ footer p {
     }
 
     .header__links li:not(:hover) {
-        opacity: 0.7;
+        opacity: 0.8;
     }
 
-    /*.header a:hover {*/
-    /*    border-bottom: 1px solid #BF1515;*/
-    /*}*/
-
     /* Hero section */
+    .hero {
+        background-size: cover;
+    }
     .hero__title {
         padding-top: 300px;
     }
