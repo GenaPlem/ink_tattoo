@@ -555,7 +555,7 @@ footer p {
         font-size: 15px;
     }
 }
-
+/* Desktop version */
 @media screen and (min-width: 1024px) {
     html {
         scroll-padding-top: unset;
@@ -590,7 +590,6 @@ footer p {
     .header__links li {
         padding: 0;
         position: relative;
-        /*padding-inline: 20px;*/
     }
 
     .header__links li::after {
@@ -601,12 +600,12 @@ footer p {
         height: 3px;
         width: 100%;
         background-color: #BF1515;
-        scale: 0 1;
-        transition: scale 0.25s;
+        transform: scale(0, 1);
+        transition: transform 0.25s;
     }
 
     .header__links li:hover::after {
-        scale: 1 1;
+        transform: scale(1, 1);
     }
 
     .header__links li:not(:hover) {
