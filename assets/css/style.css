@@ -202,7 +202,8 @@ main {
 }
 
 .hero__consultation:hover {
-    border: 2px solid #BF1515;
+    background-color: #BF1515;
+    transition: background-color 0.2s;
 }
 
 /* About section */
@@ -393,6 +394,7 @@ main {
 .consultation input[type=submit]:hover {
     background-color: #BF1515;
     border: #202020;
+    transition: background-color 0.2s;
 }
 
 #privacy_policy {
@@ -423,6 +425,7 @@ main {
 
 .contacts__links a:hover i {
     color: #BF1515;
+    transition: color 0.2s;
 }
 
 .contacts__info p {
@@ -562,6 +565,10 @@ footer p {
         padding-top: unset;
     }
 
+    h2 {
+        margin-left: 135px;
+    }
+
     /* Header section */
     .header {
         padding: 47px 0;
@@ -582,7 +589,33 @@ footer p {
 
     .header__links li {
         padding: 0;
+        position: relative;
+        /*padding-inline: 20px;*/
     }
+
+    .header__links li::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        height: 3px;
+        width: 100%;
+        background-color: #BF1515;
+        scale: 0 1;
+        transition: scale 0.25s;
+    }
+
+    .header__links li:hover::after {
+        scale: 1 1;
+    }
+
+    .header__links li:not(:hover) {
+        opacity: 0.7;
+    }
+
+    /*.header a:hover {*/
+    /*    border-bottom: 1px solid #BF1515;*/
+    /*}*/
 
     /* Hero section */
     .hero__title {
@@ -591,6 +624,10 @@ footer p {
 
     .hero__description {
         padding-bottom: 200px;
+    }
+
+    .hero__consultation {
+        padding: 1.5rem;
     }
     /* About section */
     .about__wrapper {
@@ -611,6 +648,7 @@ footer p {
     .gallery__images {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 360px);
+        gap: 10px;
     }
 
     .gallery__images img:nth-child(1) {
@@ -633,6 +671,24 @@ footer p {
     }
     .gallery__images img:nth-child(7) {
         grid-area: 3 / 3 / 4 / 4;
+    }
+    /* FAQ section */
+    .faq__question {
+        max-width: 892px;
+        margin: 0 auto;
+    }
+
+    .faq__question label {
+        font-size: 27px;
+    }
+
+    .faq__question label::before {
+        width: 20px;
+        height: 20px;
+    }
+    /* Consultation section */
+    .consultation h2 {
+        margin: 0;
     }
 
     /* Contacts section */
