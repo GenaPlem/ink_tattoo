@@ -140,6 +140,7 @@ main {
 #open_icon,
 #close_icon {
     cursor: pointer;
+    color: #fffff1;
 }
 
 #close_icon {
