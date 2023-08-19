@@ -14,7 +14,13 @@ You can have a view by following this ---> [Link](https://genaplem.github.io/ink
 ## Table of content
 - [Description](#ink-tattoo)
 - [Table of content](#table-of-content)
-- [UX]()
+- [UX](#user-experience)
+  - [Site Navigation](#site-navigation)
+  - [Registration for a Consultation](#registration-for-a-consultation)
+  - [About us](#about-us)
+  - [Gallery](#gallery)
+  - [Our Social Networks](#our-social-networks)
+  - [Contact us](#contact-us)
 - [Design](#design)
   - [Colors](#colors)
   - [Fonts](#fonts)
@@ -28,6 +34,44 @@ You can have a view by following this ---> [Link](https://genaplem.github.io/ink
   - [Encountered Issues](#encountered-issues-during-development)
 - [Credits]()
 
+- - -
+
+## User Experience
+
+### Site navigation
+- The website features a prominent navigation menu positioned at the top, providing quick and convenient access to all sections of the page. The menu has been designed with both new and experienced users in mind
+  - **Desktop Version:** On desktop screens, users are presented with navigation links that are clearly visible and easy to click.
+  ![Navigation menu Desktop](./README/images/design/nav_menu_desktop.png)
+  - **Mobile/Tablet Version:** To cater to mobile and tablet users, the navigation menu is transformed into a burger menu, offering a space-efficient and intuitive navigation solution.
+  ![Navigation menu Mobile](./README/images/design/nav_menu_mobile.png)
+
+### Registration for a Consultation
+- To streamline the process for new users seeking personalized assistance, the website provides a user-friendly form that enables quick and convenient appointment scheduling for consultations with the manager. This feature is accessible through the "Booking to consultation" button prominently placed in the first section of the website.
+  ![Consultation button](./README/images/design/consultation_btn.png)
+  - **Booking to Consultation Form:** The form has been designed to be intuitive and straightforward, allowing users to input their details and preferences efficiently.
+  ![Consultation form](./README/images/design/consultation_form.png)
+
+### About us
+- The about us section provides a brief description of our company that users can read to better understand what we offer.
+    ![About us section](./README/images/design/about_us.png)
+
+### Gallery 
+- Users can explore the artistic journey of INK TATTOO through our gallery, showcasing a diverse collection of masterpieces created by our talented artists.
+    ![Gallery](./README/images/design/gallery.png)
+### Frequently Asked Questions
+- To provide users with quick and informative assistance, the project features a comprehensive FAQ section that addresses common queries.
+![Frequently Asked Questions](./README/images/design/faq.png)
+
+### Our Social Networks
+- In the "Contact" section of the website, new users have the opportunity to connect and explore INK TATTOO's presence on various social media platforms. The process is seamless: by clicking on the provided links, users can easily navigate to their desired social network platforms.
+    ![Social Networks Links](./README/images/design/social_media.png)
+
+### Contact Us
+- The project places a strong emphasis on accessibility and communication for both new and returning users. The "Contacts" section is designed to facilitate easy interaction for any inquiries, questions, or booking requests.
+  - **Our contacts:** In the "Contacts" section, users can find dedicated phone numbers and an email address, enabling direct communication for any queries or booking-related matters.
+  ![Contacts](./README/images/design/contacts.png)
+  - **Location Map:** The "Contacts" section also includes a map that allows users to effortlessly locate our physical address. This feature provides users with a visual representation of our location, aiding in navigation and enhancing the overall user experience.
+  ![Google map](./README/images/design/google_map.png)
 - - -
 ## Design
 
@@ -51,6 +95,15 @@ They were then converted from PNG to WebP format using the free tool [Aconvert](
 ![Design wireframes top](./README/images/design/ink_tattoo_design_1.png)
 ![Design wireframes bottom](./README/images/design/ink_tattoo_design_2.png)
 - - -
+
+## Technologies 
+
+- - -
+
+## Frameworks, Libraries & Programs
+
+- - -
+
 ## Testing
 
 ### HTML validation
@@ -117,4 +170,17 @@ While developing the project, several issues were encountered and resolved.
    - **Issue:** The hover animation effect applied to menu links on the desktop version raised an error in the W3C CSS Validator, reporting that the property "scale" doesn't exist.
    ![W3C CSS validation error](./README/images/validations/css_validation_error.png)
    - **Resolution:** To address this issue, the approach was adjusted by using the transform property with the scale function. The animation effect was achieved by applying `transform: scale();` instead of `scale()`.
+
+- - -
+
+## Deployment and local development
+
+- - -
+
+## Credits
+
+- - -
+
+## Acknowledgements
+
 - - -
